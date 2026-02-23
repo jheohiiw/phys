@@ -1,0 +1,60 @@
+Electric Field from Potential Graph V(x)
+
+Problem:
+The potential as a function of position x is shown in the graph.
+Which statement about the electric field is true?
+
+Key equation:
+$$E_x=-\frac{dV}{dx}$$
+
+Meaning:
+The electric field depends on the slope of the V(x) curve.
+
+------------------------------------------------------------
+STEP 1 — Where is E = 0?
+
+$$E_x=0 \Rightarrow \frac{dV}{dx}=0$$
+
+Slope is zero at a local maximum or local minimum.
+
+From the graph, the curve has a minimum near:
+$$x=10\text{ cm}$$
+
+So:
+$$\boxed{E=0\text{ at }x=10\text{ cm}}$$
+
+------------------------------------------------------------
+STEP 2 — Where is |E| maximum?
+
+Magnitude:
+$$|E_x|=\left|\frac{dV}{dx}\right|$$
+
+So |E| is largest where the graph is steepest.
+
+From the graph, the steepest slope is around:
+$$x=5\text{ cm}$$
+
+So:
+$$\boxed{|E|\text{ is maximum near }x=5\text{ cm}}$$
+
+------------------------------------------------------------
+STEP 3 — Direction of the electric field at x=5 cm
+
+At x=5 cm the potential is decreasing as x increases,
+so the slope is negative:
+$$\frac{dV}{dx}<0$$
+
+Then:
+$$E_x=-\frac{dV}{dx}>0$$
+
+A positive E_x points in the +x direction (to the right).
+
+So:
+$$\boxed{\text{At }x=5\text{ cm, the field points to the right.}}$$
+
+------------------------------------------------------------
+Final correct statement (in one line)
+
+E is zero at x=10 cm,
+its magnitude is maximum at x=5 cm,
+and the field is directed to the right at x=5 cm.
