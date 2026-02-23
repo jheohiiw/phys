@@ -1,0 +1,15 @@
+Line Charge — Step 2 Geometry
+
+Distance from dq to point P:
+
+$$r=\sqrt{x^2+y^2}$$
+
+Angle definition:
+
+$$\cos\theta=\frac{x}{r}$$
+
+Symmetry:
+
+Vertical components cancel.
+
+Therefore field only has x-component.
