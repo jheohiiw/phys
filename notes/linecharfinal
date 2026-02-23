@@ -1,0 +1,17 @@
+Line Charge — Step 4 Integral Setup
+
+Substitute cosine:
+
+$$dE_x=\frac{k\,dq}{x^2+y^2}\cdot\frac{x}{\sqrt{x^2+y^2}}$$
+
+Simplify:
+
+$$dE_x=\frac{kx\,dq}{(x^2+y^2)^{3/2}}$$
+
+Integrate across rod:
+
+$$E_x=\int_{-a}^{a}\frac{kx\,dq}{(x^2+y^2)^{3/2}}$$
+
+Substitute dq:
+
+$$E_x=\int_{-a}^{a}\frac{kx\left(\frac{Q}{2a}\right)}{(x^2+y^2)^{3/2}}dy$$
