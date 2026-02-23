@@ -1,0 +1,52 @@
+\text{Line Charge Electric Field (Integration)}
+
+\text{Goal: Find } \vec{E} \text{ at } P=(x,0) \text{ from a uniform line of charge on the y-axis.}
+
+\text{Given:}
+\text{Rod: } y=-a \text{ to } y=+a
+\text{Total charge: } Q
+\text{Point: } P=(x,0)
+
+\text{Key idea: Use Coulomb's law with a small piece } dq \text{ and integrate.}
+\text{By symmetry, the y-components cancel, so only } E_x \text{ remains.}
+
+\text{STEP 1 -- Linear charge density}
+\lambda=\frac{Q}{2a}
+dq=\lambda\,dy=\frac{Q}{2a}\,dy
+
+\text{STEP 2 -- Geometry}
+r=\sqrt{x^2+y^2}
+\cos\theta=\frac{x}{r}
+
+\text{STEP 3 -- Coulomb's law for a small piece}
+dE=\frac{k\,dq}{r^2}
+dE=\frac{k\,dq}{x^2+y^2}
+
+\text{STEP 4 -- Take only the x-component}
+dE_x=dE\cos\theta
+dE_x=\frac{k\,dq}{x^2+y^2}\cdot\frac{x}{\sqrt{x^2+y^2}}
+dE_x=\frac{kx\,dq}{(x^2+y^2)^{3/2}}
+
+\text{STEP 5 -- Integrate along the rod, } y=-a \text{ to } y=+a
+E_x=\int_{-a}^{a}\frac{kx\,dq}{(x^2+y^2)^{3/2}}
+E_x=\int_{-a}^{a}\frac{kx\left(\frac{Q}{2a}\right)}{(x^2+y^2)^{3/2}}\,dy
+E_x=\frac{kQx}{2a}\int_{-a}^{a}\frac{dy}{(x^2+y^2)^{3/2}}
+
+\text{STEP 6 -- Evaluate the integral}
+\int \frac{dy}{(x^2+y^2)^{3/2}}=\frac{y}{x^2\sqrt{x^2+y^2}}
+\left[\frac{y}{x^2\sqrt{x^2+y^2}}\right]_{-a}^{a}
+=\frac{a}{x^2\sqrt{x^2+a^2}}-\left(\frac{-a}{x^2\sqrt{x^2+a^2}}\right)
+=\frac{2a}{x^2\sqrt{x^2+a^2}}
+
+\text{Substitute back}
+E_x=\frac{kQx}{2a}\cdot\frac{2a}{x^2\sqrt{x^2+a^2}}
+E_x=\frac{kQ}{x\sqrt{x^2+a^2}}
+
+\text{Final result:}
+E_x=\frac{kQ}{x\sqrt{x^2+a^2}}
+
+\text{Direction:}
+\text{If } Q>0,\ \vec{E} \text{ points in } +x.
+\text{If } Q<0,\ \vec{E} \text{ points in } -x.
+
+\text{Common check: If } x \text{ increases, denominator increases, so } E_x \text{ decreases.}
