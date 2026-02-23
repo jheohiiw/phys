@@ -1,0 +1,71 @@
+Hanging Charge Angle (Equilibrium)
+
+Problem:
+A small spherical insulator of mass 6.00×10^{-2} kg and charge +0.400 µC
+hangs on a thin wire. A charge of -0.220 µC is held 0.290 m away to the right.
+Find the angle θ the wire makes with the vertical.
+
+Given:
+$$m=6.00\times10^{-2}\text{ kg}$$
+$$q_1=+0.400\,\mu\text{C}=0.400\times10^{-6}\text{ C}$$
+$$q_2=-0.220\,\mu\text{C}$$
+$$r=0.290\text{ m}$$
+$$k=8.99\times10^9\text{ N·m}^2/\text{C}^2$$
+$$g=9.80\text{ m/s}^2$$
+
+------------------------------------------------------------
+STEP 1 — Basic equations (forces)
+
+At equilibrium:
+$$\sum F_x=0,\quad \sum F_y=0$$
+
+Forces:
+Weight: mg downward
+Tension: T along string
+Electric force: F_e horizontal (toward the negative charge)
+
+------------------------------------------------------------
+STEP 2 — Component equations
+
+Horizontal:
+$$T\sin\theta=F_e$$
+
+Vertical:
+$$T\cos\theta=mg$$
+
+------------------------------------------------------------
+STEP 3 — Solve for θ
+
+Divide the equations:
+
+$$\tan\theta=\frac{F_e}{mg}$$
+
+So:
+
+$$\theta=\arctan\left(\frac{F_e}{mg}\right)$$
+
+------------------------------------------------------------
+STEP 4 — Compute electric force with Coulomb’s law
+
+Magnitude:
+$$F_e=\frac{k|q_1q_2|}{r^2}$$
+
+Compute:
+$$|q_1q_2|=(0.400\times10^{-6})(0.220\times10^{-6})=0.0880\times10^{-12}=8.80\times10^{-14}$$
+
+$$r^2=(0.290)^2=0.0841$$
+
+$$F_e=\frac{(8.99\times10^9)(8.80\times10^{-14})}{0.0841}
+=9.40\times10^{-3}\text{ N}$$
+
+------------------------------------------------------------
+STEP 5 — Compute mg and θ
+
+$$mg=(6.00\times10^{-2})(9.80)=0.588\text{ N}$$
+
+$$\tan\theta=\frac{9.40\times10^{-3}}{0.588}=1.60\times10^{-2}$$
+
+$$\theta=\arctan(1.60\times10^{-2})=0.916^\circ$$
+
+Final (3 sig figs):
+$$\boxed{\theta=0.916^\circ}$$
