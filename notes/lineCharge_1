@@ -1,0 +1,17 @@
+Line Charge — Step 1 Setup
+
+Goal: Find electric field at point (x,0).
+
+Rod lies on y-axis from −a to +a.
+
+Total charge:
+$$Q$$
+
+Length:
+$$2a$$
+
+Linear charge density:
+$$\lambda=\frac{Q}{2a}$$
+
+Choose small charge element:
+$$dq=\lambda dy$$
