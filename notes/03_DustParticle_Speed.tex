@@ -1,0 +1,104 @@
+Electric Potential Energy → Speed
+
+Problem (from figure):
+A dust particle with mass m=2.50×10^{-9} kg and charge q0=3.0 nC starts from rest
+and moves in a straight line from point a to point b.
+The charges are +5.0 nC (left) and -5.0 nC (right).
+Distances are 2.0 cm between each adjacent mark:
+(+5.0 nC) — 2.0 cm — a — 2.0 cm — b — 2.0 cm — (-5.0 nC)
+Find the speed at point b.
+
+Given:
+$$m=2.50\times10^{-9}\text{ kg}$$
+$$q_0=3.0\text{ nC}=3.0\times10^{-9}\text{ C}$$
+$$q_1=+5.0\text{ nC}=5.0\times10^{-9}\text{ C}$$
+$$q_2=-5.0\text{ nC}=-5.0\times10^{-9}\text{ C}$$
+$$k=8.99\times10^9\text{ N·m}^2/\text{C}^2$$
+
+Convert cm to meters:
+2.0 cm = 0.020 m
+
+Positions along a line:
+q1 at 0
+a at 0.020 m
+b at 0.040 m
+q2 at 0.060 m
+
+Distances:
+At a: r_{1a}=0.020 m, r_{2a}=0.040 m
+At b: r_{1b}=0.040 m, r_{2b}=0.020 m
+
+------------------------------------------------------------
+STEP 1 — Basic energy equation
+
+Starts from rest:
+$$K_i=0$$
+
+Conservation:
+$$K_i+U_i=K_f+U_f$$
+
+So:
+$$K_f=U_i-U_f$$
+
+And:
+$$K_f=\frac12 mv^2$$
+
+Therefore:
+$$\frac12 mv^2=U_i-U_f$$
+
+------------------------------------------------------------
+STEP 2 — Electric potential energy
+
+For a test charge q0 in the potential of q1 and q2:
+
+$$U=kq_0\left(\frac{q_1}{r_1}+\frac{q_2}{r_2}\right)$$
+
+Compute U at a and b.
+
+------------------------------------------------------------
+STEP 3 — Compute U_a
+
+$$U_a=kq_0\left(\frac{q_1}{r_{1a}}+\frac{q_2}{r_{2a}}\right)
+=kq_0\left(\frac{5.0\times10^{-9}}{0.020}+\frac{-5.0\times10^{-9}}{0.040}\right)$$
+
+Inside parentheses:
+$$\frac{5.0\times10^{-9}}{0.020}=2.50\times10^{-7}$$
+$$\frac{-5.0\times10^{-9}}{0.040}=-1.25\times10^{-7}$$
+
+So:
+$$\left(\cdots\right)=1.25\times10^{-7}$$
+
+Thus:
+$$U_a=(8.99\times10^9)(3.0\times10^{-9})(1.25\times10^{-7})
+=3.37\times10^{-6}\text{ J}$$
+
+------------------------------------------------------------
+STEP 4 — Compute U_b
+
+$$U_b=kq_0\left(\frac{q_1}{r_{1b}}+\frac{q_2}{r_{2b}}\right)
+=kq_0\left(\frac{5.0\times10^{-9}}{0.040}+\frac{-5.0\times10^{-9}}{0.020}\right)$$
+
+Inside parentheses:
+$$\frac{5.0\times10^{-9}}{0.040}=1.25\times10^{-7}$$
+$$\frac{-5.0\times10^{-9}}{0.020}=-2.50\times10^{-7}$$
+
+So:
+$$\left(\cdots\right)=-1.25\times10^{-7}$$
+
+Thus:
+$$U_b=(8.99\times10^9)(3.0\times10^{-9})(-1.25\times10^{-7})
+=-3.37\times10^{-6}\text{ J}$$
+
+------------------------------------------------------------
+STEP 5 — Solve for v
+
+$$\frac12 mv^2=U_a-U_b
+=3.37\times10^{-6}-(-3.37\times10^{-6})
+=6.74\times10^{-6}\text{ J}$$
+
+$$v=\sqrt{\frac{2(6.74\times10^{-6})}{2.50\times10^{-9}}}
+=\sqrt{5.39\times10^{3}}
+=73.4\text{ m/s}$$
+
+Final (3 sig figs):
+$$\boxed{v=73.4\text{ m/s}}$$
