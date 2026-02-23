@@ -1,0 +1,88 @@
+Uniform Line Charge (Integration, not Gauss)
+
+Problem:
+Positive charge Q is distributed uniformly along the y-axis between y=-a and y=+a.
+Find the electric field at point P on the x-axis at distance x from the origin.
+
+Given:
+Rod on y-axis from -a to +a
+Point P = (x,0)
+
+Goal:
+Find E at P using integration.
+
+------------------------------------------------------------
+STEP 1 — Basic equation (Coulomb’s law)
+
+$$d\vec{E}=\frac{1}{4\pi\epsilon_0}\frac{dq}{r^2}\hat{r}$$
+
+We will integrate over the rod.
+
+------------------------------------------------------------
+STEP 2 — Set up dq (uniform distribution)
+
+Total length = 2a, total charge = Q
+
+$$\lambda=\frac{Q}{2a}$$
+
+A tiny piece of rod of thickness dy has charge:
+
+$$dq=\lambda\,dy=\frac{Q}{2a}\,dy$$
+
+------------------------------------------------------------
+STEP 3 — Geometry
+
+Pick dq at location (0,y).
+Point P is at (x,0).
+
+Distance from dq to P:
+
+$$r=\sqrt{x^2+y^2}$$
+
+Direction:
+By symmetry, the y-components cancel (equal and opposite).
+So only the x-component survives.
+
+------------------------------------------------------------
+STEP 4 — Write dE_x
+
+Magnitude:
+
+$$dE=\frac{1}{4\pi\epsilon_0}\frac{dq}{r^2}$$
+
+x-component:
+
+$$dE_x=dE\cos\theta$$
+
+From the triangle:
+
+$$\cos\theta=\frac{x}{r}$$
+
+So:
+
+$$dE_x=\frac{1}{4\pi\epsilon_0}\frac{dq}{r^2}\cdot\frac{x}{r}
+=\frac{1}{4\pi\epsilon_0}\frac{x\,dq}{r^3}$$
+
+Substitute r:
+
+$$dE_x=\frac{1}{4\pi\epsilon_0}\frac{x\,dq}{(x^2+y^2)^{3/2}}$$
+
+------------------------------------------------------------
+STEP 5 — Integrate from y=-a to y=+a
+
+$$E_x=\int_{-a}^{a}\frac{1}{4\pi\epsilon_0}\frac{x\,dq}{(x^2+y^2)^{3/2}}$$
+
+Substitute dq:
+
+$$E_x=\int_{-a}^{a}\frac{1}{4\pi\epsilon_0}\frac{x\left(\frac{Q}{2a}\right)}{(x^2+y^2)^{3/2}}\,dy$$
+
+------------------------------------------------------------
+STEP 6 — Final answer (after evaluating the integral)
+
+$$E_x=\frac{1}{4\pi\epsilon_0}\frac{Q}{x\sqrt{x^2+a^2}}$$
+
+Units:
+$$\text{N/C}$$
+
+Direction:
+If Q>0, field points in +x direction.
