@@ -1,0 +1,31 @@
+Line Charge E-field (Integration)
+
+Goal: Find E at P=(x,0) for a uniform line charge from y=-a to y=+a.
+
+Step 1: Define dq
+$$\lambda=\frac{Q}{2a}$$
+$$dq=\lambda\,dy$$
+
+Step 2: Geometry
+$$r=\sqrt{x^2+y^2}$$
+$$\cos\theta=\frac{x}{r}$$
+
+Step 3: Coulomb's law for the small piece
+$$dE=\frac{k\,dq}{r^2}=\frac{k\,dq}{x^2+y^2}$$
+
+Step 4: Keep only x-component (symmetry cancels y-components)
+$$dE_x=dE\cos\theta$$
+
+Step 5: Substitute
+$$dE_x=\frac{k\,dq}{x^2+y^2}\cdot\frac{x}{\sqrt{x^2+y^2}}
+=\frac{kx\,dq}{(x^2+y^2)^{3/2}}$$
+
+Step 6: Integrate with limits y=-a to a
+$$E_x=\int_{-a}^{a}\frac{kx\,dq}{(x^2+y^2)^{3/2}}$$
+$$E_x=\int_{-a}^{a}\frac{kx\left(\frac{Q}{2a}\right)}{(x^2+y^2)^{3/2}}\,dy$$
+
+Step 7: Final result
+$$E_x=\frac{kQ}{x\sqrt{x^2+a^2}}$$
+
+Direction: +x if Q>0.
+$$\cos \theta = \frac{\langle A,B \rangle}{\|A\|\|B\|}.$$
