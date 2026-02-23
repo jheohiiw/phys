@@ -1,0 +1,35 @@
+\textbf{Given:}
+\quad \lambda = \text{charge per unit length}
+\quad r = \text{distance from the wire}
+
+\textbf{Goal:}
+\quad E(r)
+
+\textbf{Step 1: Choose a Gaussian surface}
+\qquad \text{Use a cylinder of radius } r \text{ and length } L \text{ around the wire.}
+
+\textbf{Step 2: Write Gauss's Law}
+\qquad \oint \vec{E}\cdot d\vec{A} = \frac{Q_{\text{enc}}}{\varepsilon_0}
+
+\textbf{Step 3: Use symmetry to simplify flux}
+\qquad \text{For an infinite line, } \vec{E} \text{ is radial and same magnitude everywhere on the curved surface.}
+\qquad \text{On the flat end caps, } \vec{E} \parallel \text{surface, so } \vec{E}\cdot d\vec{A} = 0.
+
+\textbf{Step 4: Flux through curved surface only}
+\qquad \Phi_E = E \cdot A_{\text{curved}}
+
+\textbf{Step 5: Area of curved surface}
+\qquad A_{\text{curved}} = (2\pi r)L
+
+\textbf{Step 6: Charge enclosed}
+\qquad Q_{\text{enc}} = \lambda L
+
+\textbf{Step 7: Substitute into Gauss’s Law}
+\qquad E(2\pi rL) = \frac{\lambda L}{\varepsilon_0}
+
+\textbf{Step 8: Solve for } E
+\qquad E = \frac{\lambda L}{\varepsilon_0 (2\pi rL)}
+\qquad E = \frac{\lambda}{2\pi \varepsilon_0 r}
+
+\boxed{E(r)=\frac{\lambda}{2\pi\varepsilon_0 r}}
+\quad \text{(direction: radial outward if } \lambda>0,\ \text{inward if } \lambda<0)
